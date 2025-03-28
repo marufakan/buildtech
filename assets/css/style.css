@@ -125,6 +125,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .service-card:hover {
@@ -133,6 +137,14 @@ body {
 
 .service-card i {
     color: var(--secondary-color);
+}
+
+.service-card h3 {
+    margin: 1rem 0;
+}
+
+.service-card p {
+    margin-bottom: 0;
 }
 
 /* Project Cards */
