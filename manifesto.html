@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
+        @font-face {
+            font-family: 'MiLANO SANS REGULAR';
+            src: url('assets/webfonts/MilanoSans-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Montserrat Semi Bold';
+            src: url('assets/webfonts/Montserrat-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #3498db;
@@ -18,7 +32,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Montserrat Semi Bold', sans-serif;
             color: var(--text-color);
             background-color: var(--light-bg);
         }
@@ -79,12 +93,10 @@
         }
 
         .section-title {
-            color: var(--secondary-color);
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            font-family: 'MiLANO SANS REGULAR', sans-serif;
             position: relative;
-            padding-bottom: 0.5rem;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
         }
 
         .section-title::after {
@@ -94,7 +106,7 @@
             left: 0;
             width: 50px;
             height: 3px;
-            background: var(--secondary-color);
+            background: #113736;
             border-radius: 2px;
         }
 
@@ -103,6 +115,11 @@
             color: var(--text-color);
             font-size: 1.1rem;
             line-height: 1.8;
+            font-family: 'Montserrat Semi Bold', sans-serif;
+        }
+
+        .manifesto-section p {
+            font-family: 'Montserrat Semi Bold', sans-serif;
         }
 
         @media (max-width: 768px) {
@@ -211,6 +228,10 @@
             to {
                 opacity: 1;
             }
+        }
+
+        hr {
+            border-color: #113736 !important;
         }
     </style>
 </head>

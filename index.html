@@ -8,8 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
+        @font-face {
+            font-family: 'MiLANO SANS REGULAR';
+            src: url('assets/webfonts/MilanoSans-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Montserrat Semi Bold';
+            src: url('assets/webfonts/Montserrat-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
         body {
             background-color: #dfeade;
+            font-family: 'Montserrat Semi Bold', sans-serif;
         }
         .hero-section {
             background-color: #dfeade;
@@ -101,6 +116,35 @@
             color: #113736;
             font-size: 3rem;
             margin-bottom: 1rem;
+        }
+        hr {
+            border-color: #113736 !important;
+        }
+        ::after {
+            color: #113736 !important;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #113736;
+            border-radius: 2px;
+        }
+        .contact-info .fas {
+            color: #113736;
+            margin-right: 0.5rem;
+        }
+        .section-title {
+            font-family: 'MiLANO SANS REGULAR', sans-serif;
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        p, .lead, .service-card p, .project-info p, .contact-info p {
+            font-family: 'Montserrat Semi Bold', sans-serif;
         }
     </style>
 </head>
