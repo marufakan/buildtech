@@ -24,36 +24,20 @@
         }
 
         .manifesto-section {
-            padding: 120px 0 80px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 120px 0 60px;
+        }
+
+        .manifesto-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #2c3e50;
         }
 
         .manifesto-content {
             font-size: 1.1rem;
             line-height: 1.8;
-        }
-
-        .manifesto-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 3rem;
-            color: var(--primary-color);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .manifesto-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: var(--secondary-color);
-            border-radius: 2px;
+            color: #333;
         }
 
         .manifesto-paragraph {
@@ -81,6 +65,9 @@
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
         }
 
         .manifesto-paragraph:hover .manifesto-image {
@@ -133,21 +120,80 @@
         }
 
         .navbar {
-            backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.95) !important;
+            background-color: #113736 !important;
+            padding: 1rem 0;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #f8f9fa !important;
+        }
+
+        .dropdown-menu {
+            background-color: #113736;
+            border: none;
+        }
+
+        .dropdown-item {
+            color: #fff;
+        }
+
+        .dropdown-item:hover {
+            background-color: #0a2524;
+            color: #fff;
         }
 
         .footer {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%) !important;
+            background-color: #113736 !important;
+            padding: 3rem 0;
         }
-
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+        .footer-logo img {
+            height: 60px;
+        }
+        .footer-contact {
+            margin-bottom: 2rem;
+        }
+        .footer-contact p {
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        .footer-contact i {
+            margin-right: 0.5rem;
+            color: #fff;
+        }
+        .social-links {
+            margin-top: 1.5rem;
+        }
         .social-links a {
-            transition: transform 0.3s ease;
+            color: #fff;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            transition: color 0.3s;
         }
-
         .social-links a:hover {
-            transform: translateY(-3px);
-            color: var(--secondary-color) !important;
+            color: #f8f9fa;
+        }
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .footer-bottom p {
+            margin-bottom: 0;
+            color: rgba(255, 255, 255, 0.7);
         }
 
         /* Image loading animation */
@@ -168,7 +214,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/ArteIn_logos-01.png" alt="ArteIn Logo" height="40">
@@ -182,12 +228,12 @@
                         <a class="nav-link" href="index.html#home">Ana Sayfa</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Hakkımızda
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html#about">Hakkımızda</a></li>
-                            <li><a class="dropdown-item active" href="manifesto.html">Arte in Manifestosu</a></li>
+                            <li><a class="dropdown-item" href="manifesto.html">Arte in Manifestosu</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
