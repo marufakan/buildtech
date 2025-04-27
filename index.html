@@ -146,6 +146,38 @@
         p, .lead, .service-card p, .project-info p, .contact-info p {
             font-family: 'Montserrat Semi Bold', sans-serif;
         }
+        .btn-primary {
+            background-color: #113736 !important;
+            border-color: #113736 !important;
+            color: #fff !important;
+            padding: 0.8rem 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0a2524 !important;
+            border-color: #0a2524 !important;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-primary {
+            color: #113736 !important;
+            border-color: #113736 !important;
+            background-color: transparent !important;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #113736 !important;
+            color: #fff !important;
+        }
+        .navbar-toggler {
+            background-color: #dfeade !important;
+            border: none;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
     </style>
 </head>
 <body>
@@ -245,7 +277,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
+    <section id="services" class="py-5" style="background-color: #dfeade;">
         <div class="container">
             <h2 class="section-title text-center mb-5">Hizmetlerimiz</h2>
             <div class="row g-4">
@@ -324,7 +356,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5" style="background-color: #dfeade;">
         <div class="container">
             <h2 class="section-title text-center mb-5">İletişim</h2>
             <div class="row">
